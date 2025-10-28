@@ -3,8 +3,8 @@
 # First in First out -> 큐를 이용한다
 # 방향성이 존재한다 -> Directed Graph
 # 방향성이 없다(쌍방향) -> Undirected Graph
-# Target을 찾는 것이 목표, 찾지 못했다면 해당 노드의 인접리스트를 큐에 등록한다
-# 이미 검문한 노드는 기록하여두고 검문을 해야하는지 아닌지 판단할 수 있게 한다
+# 최종 Target을 찾는 것이 목표, 찾지 못했다면 현재 노드의 인접노드들을 큐에 등록한다
+# 이미 방문한 노드는 체크하여 재방문하지 않도록 한다
 
 from collections import deque
 
