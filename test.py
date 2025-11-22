@@ -1,6 +1,3 @@
-dict_1 = {
-    'a': 1
-}
-
-for i in dict_1['a']:
+source = [1,2,3,4,5]
+for i in range(0, 10, -1):
     print(i)
