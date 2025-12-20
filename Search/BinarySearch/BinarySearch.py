@@ -2,6 +2,8 @@ list_1 = [1, 2, 3, 4, 5]
 target = 5
 
 
+# binarySearch는 재귀함수
+
 def binarySearch(source, target):
     left = 0
     right = len(list_1) - 1
