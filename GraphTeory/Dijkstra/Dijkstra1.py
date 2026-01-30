@@ -13,12 +13,12 @@ def nextNode(visited, costs):
             node = i
     return node
 
-def Dijkstra(start, end, adjacencyList):
+def Dijkstra(start, end, adjacencyList: list):
     visited = set()
     costs = {}
     parent = {}
 
-    # 모든 도달 가능한 노드의 비용을 inf로 init한다
+    # 시작노드가 각각의 나머지 모든 노드까지의 거리를 기록할 테이블을 inf로 세팅한다
     for i in adjacencyList:
         for j in adjacencyList[i]:
             costs[j] = float('inf')
